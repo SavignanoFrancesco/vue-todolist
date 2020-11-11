@@ -21,8 +21,8 @@
                         <button @click="addTodo" type="button" name="button"><span>Aggiungi todo</span></button>
 
                         <ul>
-                            <li v-for="todo in todoList">
-                                <i class="far fa-circle"></i>{{ todo }}
+                            <li v-for="(todo, index) in todoList">
+                                <span @click="deleteTodo(index)"><i class="far fa-circle"></i>{{ todo }}</span>
                             </li>
                         </ul>
 
