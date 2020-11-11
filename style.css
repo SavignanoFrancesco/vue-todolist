@@ -25,8 +25,3 @@ ul{
     height: 80%;
     border: 1px solid black;
 }
-
-.todos{
-    display: flex;
-    justify-content: flex-start;
-}

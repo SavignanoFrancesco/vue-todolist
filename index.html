@@ -17,17 +17,17 @@
 
                     <div class="user-input">
 
-                        <input type="text" name="" value="">
-                        <button type="button" name="button"><span>Aggiungi todo</span></button>
+                        <input type="text" name="" value="" v-model="newTodo" placeholder="Cos'altro c'è da fare?">
+                        <button @click="addTodo" type="button" name="button"><span>Aggiungi todo</span></button>
 
-                    </div>
-
-                    <div class="todos">
                         <ul>
-                            <li v-for="todo in todolist">
-                                <i class="far fa-check-circle"></i>{{ todo }}
+                            <li v-for="todo in todoList">
+                                <i class="far fa-circle"></i>{{ todo }}
                             </li>
                         </ul>
+
+
+
                     </div>
 
                 </div>
